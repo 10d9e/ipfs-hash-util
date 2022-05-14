@@ -1,6 +1,6 @@
 # ipfs-hash-util
 
-```
+```go
 package main
 
 import (
@@ -10,9 +10,7 @@ import (
 )
 
 func main() {
-	u.Sum(byte[]("hello world"))
-
-	digest, err := Sum([]byte("hello world"))
+	digest, err := u.Sum([]byte("hello world"))
 	if err != nil {
 		t.Fatal(err)
 	}
